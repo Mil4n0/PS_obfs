@@ -1,5 +1,3 @@
-# version 7 - 02272019
-
 import random, sys, math
 
 predefined = ['home', 'profile', 'pshome', 'host', 'psversiontable']
@@ -57,7 +55,7 @@ def navigateComment(inp, idx):
             idx += 1
         return res + '>'
     else:
-        while idx < len(inp) and inp[idx] != '\n':
+        while idx < len(inp) and inp[idx] != '\n': // lominatte
             res += inp[idx]
             idx += 1
         return res + '\n'
@@ -365,7 +363,7 @@ def dirtyString(inputString):
 try:
     inputAddress = sys.argv[1]
 except:
-    inputAddress = 'we.ps1'
+    inputAddress = 'input.ps1'
 with open(inputAddress, 'r') as i:
     with open(inputAddress + '.ps1', 'w') as o:
         kkk = i.read()
